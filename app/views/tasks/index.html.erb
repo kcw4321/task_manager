@@ -1,0 +1,16 @@
+<h1>All Tasks:</h1>
+  <ul>
+    <% @task.each do |task| %>
+      <li><%= task.name %></li>
+      <%= link_to 'Show task', task_path(task) %> <%# () gets id of task - params? %>
+    <% end %>
+  </ul>
+
+  <%= link_to 'Add task', tasks_new_path %>  <%# rake routes to get the prefixes before _path %>
+
+
+
+
+
+
+
